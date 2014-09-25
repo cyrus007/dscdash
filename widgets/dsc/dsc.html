@@ -1,0 +1,10 @@
+<div class="dsc-head">
+    <div class="left" data-bind="dsc.node"></div>
+    <div class="right" data-bind="dsc.date"></div>
+</div>
+<div class="dsc-body">
+    <ul>
+      <li><p><span class="button" data-bind-data-state="dsc.light" data-bin-data-state="dsc.throb"></span><span class="status" data-bind="dsc.status"></span></p></li>
+      <li class="message" data-foreach-msg="msgs"><p data-bind="msg"></p></li>
+    </ul>
+</div>
