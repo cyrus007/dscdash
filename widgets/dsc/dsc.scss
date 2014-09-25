@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: rgba(255,0,0,1.0);
+$background-color: rgba(205,200,220,1.0);
 @keyframes throb {
   0% { background-color: #4A7F00; box-shadow: 0 0 3px #4A7F00; }
   50% { background-color: #94FF00; box-shadow: 0 0 10px #94FF00; }
@@ -18,6 +18,7 @@ $background-color: rgba(255,0,0,1.0);
   min-height: 300px;
  
   .dsc-head{
+    display: inline-block;
     width: 300px;
     color: rgba(20,10,10,0.9);
     text-transform: uppercase;
@@ -28,20 +29,19 @@ $background-color: rgba(255,0,0,1.0);
 
     .left {
       float: left;
-//      padding: 4px 0px;
-      width:40%
+      padding: 0px 0px 0px 20px;
+      width: auto;
     }
  
     .right {
       float: right;
-//      padding: 4px 0px 4px;
-      width:58%
+      padding: 0px 20px;
     }
   }
  
   .dsc-body {
     border-top: 2px solid #8b8b8b;
-    padding: 12px;
+    padding: 5px;
     color: rgba(5,10,10,1.0);
     text-shadow: 1px 1px #0e0e0e;
     font-family: Helvetica, Arial, sans-serif;
@@ -49,10 +49,10 @@ $background-color: rgba(255,0,0,1.0);
 
     .button {
       display: inline-block;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      border: 2px solid #f5f5f5;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #f5f5f5;
       border-radius: 50%;
       color: #f5f5f5;
       background: rgba(150,160,125,0.5);
