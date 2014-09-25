@@ -18,7 +18,7 @@ $background-color: rgba(205,200,220,1.0);
   min-height: 300px;
  
   .dsc-head{
-    display: inline-block;
+    vertical-align: top;
     width: 300px;
     color: rgba(20,10,10,0.9);
     text-transform: uppercase;
@@ -28,14 +28,13 @@ $background-color: rgba(205,200,220,1.0);
     text-shadow: 1px 1px rgba(200,200,200,0.9);
 
     .left {
-      float: left;
-      padding: 0px 0px 0px 20px;
-      width: auto;
+      display: inline-block;
+      width: 38%;
     }
  
     .right {
-      float: right;
-      padding: 0px 20px;
+      display: inline-block;
+      width: 58%;
     }
   }
  
