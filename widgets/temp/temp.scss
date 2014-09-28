@@ -1,0 +1,51 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color: #EC3C6B;
+ 
+$full-color: rgba(255, 255, 255, 1);
+$light-color: rgba(255, 255, 255, 0.7);
+ 
+// ----------------------------------------------------------------------------
+// Widget-forecast styles
+// ----------------------------------------------------------------------------
+.widget-temp {
+  vertical-align: baseline !important;
+  padding: 0px !important;
+  background-color: $background-color;
+  min-height: 300px;
+ 
+  .dsc-head{
+    vertical-align: top;
+    width: 300px;
+    color: rgba(20,10,10,0.9);
+    text-transform: uppercase;
+    padding: 2px;
+    font-weight: 700;
+    font-size: 0.7em;
+    text-shadow: 1px 1px rgba(200,200,200,0.7);
+
+    .left {
+      display: inline-block;
+      width: 38%;
+    }
+ 
+    .right {
+      display: inline-block;
+      width: 58%;
+    }
+  }
+ 
+  .dsc-body {
+    border-top: 2px solid #8b8b8b;
+    padding: 5px;
+    color: rgba(5,10,10,1.0);
+    text-shadow: 1px 1px #0e0e0e;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+
+    .temp {
+      color: $full-color;
+    }
+  }
+}
