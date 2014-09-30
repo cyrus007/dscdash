@@ -46,6 +46,11 @@ $light-color: rgba(255, 255, 255, 0.7);
 
     .temp {
       color: $full-color;
+      font-size: 1.6em;
+    }
+
+    .more-info {
+      color: $light-color;
     }
   }
 }

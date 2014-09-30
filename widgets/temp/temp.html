@@ -3,5 +3,8 @@
     <div class="right" data-bind="updatedAtMessage"></div>
 </div>
 <div class="dsc-body">
-  <h2 class="temp" data-bind="mote.temp | raw"></h2>
+  <h2 class="temp" data-bind="mote.ftemp | raw"></h2>
+  <h2 class="temp" data-bind="mote.ctemp | raw"></h2>
+  <h2 class="temp" data-bind="mote.humid | raw"></h2>
+  <p class="more-info">Mote voltage <span class="info" data-bind="mote.volts"></span></p>
 </div>

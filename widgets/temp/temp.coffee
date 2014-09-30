@@ -1,6 +1,7 @@
 class Dashing.Temp extends Dashing.Widget
 
-  @accessor 'updatedAtMessage', ->
+  #@accessor 'updatedAtMessage', ->
+  Dashing.Widget.accessor 'updatedAtMessage', ->
     if updatedAt = @get('updatedAt')
       timestamp = new Date(updatedAt * 1000)
       day   = ("0" + timestamp.getDate()).slice(-2)

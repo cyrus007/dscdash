@@ -21,6 +21,6 @@ SCHEDULER.every '10m', :first_in => 0 do |job|
   forecast = JSON.parse(response.body)
   forecast_current_temp = forecast["currently"]["temperature"].round
   forecast_hour_summary = forecast["minutely"]["summary"]
-  mote = { id: "SS_Temp", temp: "#{forecast_current_temp}&deg;", hour: "#{forecast_hour_summary}" }
-  send_event('22', { mote: "SS_Temp", mote: mote })
+  mote = { id: "SS_Temp", ftemp: "#{forecast_current_temp}&deg;F", hour: "#{forecast_hour_summary}" }
+  send_event('22', { mote: mote })
 end
